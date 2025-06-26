@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.find.FindFragment"
+    android:paddingTop="0dp"
+    android:paddingBottom="48dp"
+    android:paddingHorizontal="16dp">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Find Feature Instructions"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="16dp"
+        android:textColor="#40AEFC"
+        />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layout_constraintBottom_toTopOf="@+id/start_find_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_server_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Server Device Setup"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:textColor="#40AEFC"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Enable Bluetooth:\n   - Go to your device's settings and find the Bluetooth settings.\n   - Turn on Bluetooth.\n\n2. Navigate to Find:\n   - Open the app on your device and navigate to 'Find' in the bottom navigation bar.\n\n3. Make Device Discoverable:\n   - Tap on the menu icon (usually three dots or lines).\n   - Select the option to make the device discoverable.\n   - Confirm the action if prompted.\n\n4. Wait for Connection:\n   - Your device is now ready to accept connections from client devices.\n   - Keep the app open and wait for a client device to connect."
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/text_client_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Client Device Setup"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:textColor="#40AEFC"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Enable Bluetooth:\n   - Go to your device's settings and find the Bluetooth settings.\n   - Turn on Bluetooth.\n\n2. Navigate to Find:\n   - Open the app on your device and navigate to 'Find' in the bottom navigation bar.\n\n3. Scan for Devices:\n   - Tap the button to scan for nearby Bluetooth devices.\n   - Wait for the app to display a list of available devices.\n\n4. Select Server Device:\n   - From the list of available devices, select the server device you want to connect to.\n   - The app will attempt to connect to the selected device.\n\n5. Grant Permissions:\n   - If prompted, grant the necessary permissions for Bluetooth and location access.\n\n6. Start Using the App:\n   - Once connected, you can use the app to find the location of the connected device.\n   - Follow the on-screen instructions to use features like making the connected device play a sound or flash its light."
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/start_find_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start Find Location"
+        android:textSize="18sp"
+        android:background="#40AEFC"
+        android:textColor="@android:color/white"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

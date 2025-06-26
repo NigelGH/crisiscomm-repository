@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.chat.ChatFragment"
+    android:paddingTop="0dp"
+    android:paddingBottom="48dp"
+    android:paddingHorizontal="16dp">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Chat Feature Instructions"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="16dp"
+        android:textColor="#40AEFC"
+        />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layout_constraintBottom_toTopOf="@+id/start_chat_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_server_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Server Device Setup"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:textColor="#40AEFC"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Enable Bluetooth:\n   - Open the app on your device.\n   - If Bluetooth is not enabled, the app will prompt you to enable it. Follow the on-screen instructions to turn on Bluetooth.\n\n2. Navigate to Chat:\n   - In the app, navigate to 'Chat' in the bottom navigation bar.\n\n3. Grant Permissions:\n   - The app will request permissions for Bluetooth and location access. Grant all the necessary permissions.\n\n4. Start the Server:\n   - The app will automatically start the Bluetooth server once permissions are granted and Bluetooth is enabled.\n   - You should see a message indicating that the server is running."
+                android:textSize="16sp"
+                android:paddingBottom="16dp"
+
+                />
+
+            <TextView
+                android:id="@+id/text_client_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Client Device Setup"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:textColor="#40AEFC"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Enable Bluetooth:\n   - Open the app on your device.\n   - If Bluetooth is not enabled, the app will prompt you to enable it. Follow the on-screen instructions to turn on Bluetooth.\n\n2. Navigate to Chat:\n   - In the app, navigate to 'Chat' in the bottom navigation bar.\n\n3. Grant Permissions:\n   - The app will request permissions for Bluetooth and location access. Grant all the necessary permissions.\n\n4. Scan for Devices:\n   - Navigate to the device scan screen by selecting the option to find new devices.\n   - The app will start scanning for nearby Bluetooth devices.\n\n5. Select the Server Device:\n   - From the list of available devices, select the device that is running the server.\n   - The app will attempt to connect to the server device."
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/text_using_chat_feature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chatting"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:textColor="#40AEFC"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Start Chatting:\n   - Once the client device is connected to the server device, you can start chatting.\n   - Type your message in the input field and press the send button.\n\n2. Receive Messages:\n   - Messages sent from the other device will appear in the chat window."
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/text_disconnecting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disconnecting"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:textColor="#40AEFC"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Stop the Server:\n   - On the server device, you can stop the server by closing the app or navigating to the appropriate option within the app.\n\n2. Disconnect the Client:\n   - On the client device, you can disconnect by closing the app or navigating to the appropriate option within the app."
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/start_chat_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start Chat"
+        android:textSize="18sp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

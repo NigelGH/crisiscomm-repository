@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#02A862"/>
+            <corners android:radius="120dp"/>
+            <size android:width="96dp" android:height="96dp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_baseline_graphic_eq" android:gravity="center"/>
+</layer-list>

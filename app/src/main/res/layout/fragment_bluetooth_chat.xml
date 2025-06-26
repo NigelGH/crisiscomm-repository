@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/not_connected_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/connect_device_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/no_connected_device_message"/>
+
+        <Button
+            android:id="@+id/connect_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/connect_device_prompt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/connected_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/connected_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/message_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/edit_text_background"
+                android:hint="Message"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                />
+
+            <ImageButton
+                android:id="@+id/send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/send_message_button"
+                android:padding="8dp"
+                android:src="@drawable/ic_baseline_send"
+                app:tint="#1986FE"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

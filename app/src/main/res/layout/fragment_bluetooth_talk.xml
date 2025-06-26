@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/not_connected_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are not connected to a device."
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <com.example.capstone.ui.talk.CurvedTextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp" />
+
+    <ImageButton
+        android:id="@+id/speak_button"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="@drawable/speak_button_background"
+        android:src="@drawable/ic_baseline_mic"
+        android:padding="24dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="Speak"
+        android:scaleType="centerInside" />
+
+    <Button
+        android:id="@+id/disconnect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:layout_below="@id/speak_button"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="32dp"/>
+</RelativeLayout>

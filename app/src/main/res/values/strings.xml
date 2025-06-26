@@ -1,0 +1,67 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">CrisisComm</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_find">Find</string>
+    <string name="title_talk">Talk</string>
+    <string name="button">Button</string>
+
+
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">Connecting...</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">not connected</string>
+
+    <!-- DeviceListForTalkFeatureActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Paired Connection</string>
+    <string name="insecure_connect">Fast Connection</string>
+    <string name="discoverable">Make Device Discoverable</string>
+    <string name="send">Send</string>
+    <string name="sample_show_log">Show Log&#xA;</string>
+    <string name="sample_hide_log">Hide Log</string>
+    <string name="not_connected">Device Not Connected\n</string>
+    <string name="type_message">Message</string>
+    <string name="secure_connect_scan">Paired Connection</string>
+    <string name="insecure_connect_scan">Fast Connection</string>
+
+    <string name="no_devices_found">No BLE devices found</string>
+    <string name="chat_title">Chat</string>
+    <string name="device_list_title">Chat</string>
+    <string name="location_required_error">The location permission is required to support Bluetooth Low Energy communication</string>
+    <string name="grant_permission_prompt">Grant Location Permission</string>
+    <string name="active_scan_message">Scanning for devices</string>
+    <string name="bt_not_enabled">Please enable Bluetooth in order to scan for devices</string>
+    <string name="enable_bluetooth_prompt">Enable Bluetooth</string>
+    <string name="bt_ads_not_supported">Bluetooth Advertisements are not supported on this device</string>
+    <string name="chat_confirm_message">Would you like to chat with %1$s</string>
+    <string name="chat_deny_button">No</string>
+    <string name="chat_confirm_button">Yes</string>
+    <string name="no_connected_device_message">Not connected to a device</string>
+    <string name="connect_device_prompt">Connect with nearby devices</string>
+    <string name="send_message_button">Send Message</string>
+    <string name="chatting_with_device">Chatting with %1$s</string>
+    <string name="your_device_address">Your device address:</string>
+    <string name="scanning_header">Choose a device</string>
+    <string name="unknown_device">Unknown Device</string>
+    <string name="type_a_message">Type Message</string>
+    <string name="advertising_not_supported_error">Advertising is no Supported</string>
+    <string name="connected_to_device">Connected to %s</string>
+    <string name="bluetooth_not_enabled">Bluetooth not enabled</string>
+    <string name="bluetooth_permission_denied">Bluetooth Permission Denied</string>
+    <string name="permission_denied">Permission Denied\n</string>
+    <string name="empty_message_warning">Empty Message</string>
+    <string name="permission_granted">Permission Granted</string>
+    <string name="scan">Scan</string>
+    <string name="start_scan">Scan</string>
+    <string name="disconnect">Disconnect</string>
+
+</resources>
+

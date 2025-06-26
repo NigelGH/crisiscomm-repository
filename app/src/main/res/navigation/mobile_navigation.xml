@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_chat">
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.example.capstone.ui.chat.ChatFragment"
+        android:label="@string/title_chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/navigation_find"
+        android:name="com.example.capstone.ui.find.FindFragment"
+        android:label="@string/title_find"
+        tools:layout="@layout/fragment_find" />
+
+    <fragment
+        android:id="@+id/navigation_talk"
+        android:name="com.example.capstone.ui.talk.TalkFragment"
+        android:label="@string/title_talk"
+        tools:layout="@layout/fragment_talk" />
+</navigation>
